@@ -1,0 +1,276 @@
+---
+title: "Visualisasi Sejarah Para Peraih Penghargaan Nobel"
+format: 
+  html: 
+    df-print: kable
+description: |
+  Mari kita menelaah orang-orang hebat dari 100 tahun yang lalu hingga sekarang.
+author: "Alif Dewantara"
+title-block-banner: true
+date: "2023-02-09"
+categories: 
+  - Analisis Data
+  - R
+comments: 
+  utterances: 
+    repo: quarto-dev/quarto-web
+    theme: github-light
+    issue-term: title
+image: "Nobel_Prize.png"
+---
+
+## Peraih Penghargaan Nobel
+
+Penghargaan Nobel mungkin adalah salah satu penghargaan paling terkenal di dunia ilmu pengetahuan. Selain kehormatan, gengsi, dan nominal uang yang tidak sedikit, penerima Nobel juga mendapatkan medali emas yang terdapat cetakan Alfred Nobel (1833 - 1896), sang pencetus penghargaan tersebut. Setiap tahunnya penghargaan tersebut diberikan pada ilmuwan dan para sarjana di bidang kimia, sastra, fisika, psikologi atau kesehatan, ekonomi, dan perdamaian. Penghargaan Nobel pertama kali diberikan pada tahun 1901, dan saat itu penghargaan tersebut sangatlah Eropa-sentris dan sebagian besar didapatkan oleh pria. Benarkah demikian?
+
+[![Penghargaan Nobel (Sumber: cruxnow.com)](nobel.webp)](https://cruxnow.com/news-analysis/2022/10/why-dont-popes-ever-win-the-nobel-peace-prize)
+
+Mari kita cari tahu! [Yayasan Nobel](https://public.opendatasoft.com/explore/dataset/nobel-prize-laureates/table) telah membuat dataset yang berisi semua pemenang penghargaan dari 1901 sampai 2022. Pertama-tama, kita akan memuat dataset yang akan kita pakai:
+
+```{r load_library, message=FALSE}
+# Memuat library
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggthemes)
+library(highcharter)
+library(countrycode)
+library(data.table)
+
+# Membaca dataset Nobel Prize
+nobelkotor <- read.csv('datasets/nobel-prize-laureates.csv')
+```
+
+## Pembersihan Data (*Data Cleaning*) dan Membenarkan Tipe Data
+
+Sebelum melakukan *Exproratory Data Analysis* (EDA), hal yang biasa dilakukan oleh seorang analis adalah melakukan pembersihan data dan membenarkan tipe data:
+
+```{r data_cleaning, warning=FALSE}
+# Membersihkan data yang takkan dipakai, memisahkan Geo.Shape menjadi Latitude dan Longitude
+nobelbersih2 <- subset(nobelkotor, select = -c(Overall.motivation, Geo.Shape)) %>%
+  arrange(Id) %>%
+  separate(Geo.Point.2D, into = c('Lat', 'Lon'), sep = ",")
+
+# Menghapus sisa spasi yang ada di dalam kolom
+nobelbersih2$Lat <- trimws(nobelbersih2$Lat)
+nobelbersih2$Lat <- as.double(nobelbersih2$Lat)
+nobelbersih2$Lon <- trimws(nobelbersih2$Lon)
+nobelbersih2$Lon <- as.double(nobelbersih2$Lon)
+
+# Mengubah tipe data Born (tanggal lahir) dan Died (tanggal wafat) menjadi tipe Date (tanggal)
+nobel <- nobelbersih2 %>%
+  mutate_at(c('Born', 'Died'), as.Date)
+
+# Mengubah string kosong menjadi NA
+nobel[nobel == ''] <- NA
+
+```
+
+```{r}
+nobel$Born.country.code <- countrycode(nobel$Born.country.code, origin = "iso2c", destination = "iso3c")
+```
+
+## Siapa Saja Peraih Penghargaan Nobel?
+
+```{r}
+head(nobel%>%select(-Motivation), 5)
+```
+
+Dengan melihat lima orang awal pemenang penghargaan, atau yang biasa disebut sebagai *Nobel laureates*, kita dapat melihat seseorang: Wilhelm Conrad Rontgen. Mungkin kita langsung tahu apa kontribusi beliau dalam ilmu pengetahuan. Yep, ia adalah penemu mesin X-ray, yang biasa disebut oleh masyarakat sebagai mesin Rontgen (*ronsen*). Menariknya, kita bisa lihat bahwa semua pemenang Nobel tahun 1901 berasal dari Eropa. Lalu, bagaimana dengan pemenang Nobel dari 1901 sampai 2022?
+
+```{r}
+# Menampilkan jumlah peraih Nobel
+nrow(nobel)
+```
+
+```{r}
+# Menampilkan angka pemenang Nobel berdasarkan jenis kelamin
+nobel %>%
+  count(Gender, sort = TRUE)
+```
+
+```{r}
+# Menampilkan angka pemenang Nobel berdasarkan negara asal
+nobel_country_count <- nobel %>%
+  count(Born.country.code) %>%
+  arrange(desc(n))
+setnames(nobel_country_count, "n", "jumlah")
+setnames(nobel_country_count, "Born.country.code", "kode_negara")
+head(nobel_country_count, 10)
+```
+
+```{r}
+hcmap(
+  "custom/world-robinson-lowres",
+  data = nobel_country_count,
+  name = "Asal Negara Para Pemenang Nobel",
+  value = "jumlah",
+  borderWidth = 0,
+  nullColor = "#d3d3d3",
+  joinBy = c("iso-a3", "kode_negara")
+) |>
+  hc_colorAxis(
+    stops = color_stops(colors = viridisLite::inferno(10, begin = 0.1)),
+    type = "logarithmic"
+  )
+```
+
+## Ada Indonesia Coy!
+
+Menariknya, jika kita melakukan proses menyatukan data `Nobel` dan `World_country` di atas, kita akan mendapatkan tempat tanggal lahir negara dalam konteks sosial-politik zaman sekarang. Sebenarnya, hal ini dilakukan untuk mempermudah pembuatan peta para peraih Nobel di atas. Kelebihan lain dari metode ini adalah kita akan mendapatkan data peraih Nobel yang lahir di **Indonesia**. Pemenang itu ialah Willem Einthoven. Hal ini tentu akan lebih sulit kita dapatkan jika tanpa menggunakan data `world_country`, karena dalam data `Nobel`, Einthoven tertulis lahir di *Java Dutch East Indies (now Indonesia)*. Hal ini dapat terjadi karena pada saat Einthoven lahir, Semarang masih berada dalam kekuasaan Pemerintah Kolonial Hindia Belanda.
+
+```{r}
+# Mendapatkan data peraih Nobel kelahiran Indonesia
+nobel %>%
+  filter(Born.country.code == 'IDN')
+```
+
+![Willem Einthoven, seorang ilmuan kesehatan kelahiran Semarang, 21 Mei 1860, yang berjasa dalam penemuan alat elektrokardiogram.](img/Willem%20Einthoven.webp)
+
+## Dominasi Amerika Serikat (AS)
+
+Tentunya bukan hal yang mengejutkan jika Amerika Serikat menjadi negara dengan jumlah penerima Nobel terbanyak di dunia. Tetapi, di tahun 1901 sebagian besar pemenang Nobel adalah orang Eropa. Kapankah AS mulai mendominasi penghargaan Nobel?
+
+```{r}
+# Menghitung proporsi orang Amerika pemenang Nobel
+nobel$usa_born_winner <- nobel$Born.country.code == 'USA'
+floor_decade <- function(value){ return(value - value %% 10) }
+nobel$decade <- floor_decade(nobel$Year)
+prop_usa_winners <- nobel %>%
+  group_by(decade) %>%
+  summarize(mean_usa = mean(usa_born_winner, na.rm = TRUE))
+prop_usa_winners
+```
+
+## Memvisualisasikan Dominasi AS
+
+Setelah melihat tabel di atas, tentunya agak sulit dimengerti jika hanya melihat data mentah. Maka, mari kita membuat visualisasinya.
+
+```{r}
+# Membuat visualisasi
+ggplot(prop_usa_winners, aes(x=decade, y=mean_usa)) +
+  geom_line() +
+  labs(title="Dominasi Amerika Serikat dalam Penghargaan Nobel")
+```
+
+```{r message=FALSE}
+# Membuat pengelompokan berdasarkan kategori Nobel
+prop_category <- nobel %>%
+  group_by(decade, Category) %>%
+  summarize(mean = mean(usa_born_winner, na.rm = TRUE))
+
+ggplot(prop_category, aes(x=decade, y=mean, color=Category)) +
+  geom_line() +
+  labs(title="Dominasi AS per Kategori Nobel") +
+  theme_few()
+```
+
+## Eksistensi Wanita dalam Penghargaan Nobel
+
+Sebelumnya, kita sudah melihat bahwa ada perbedaan jumlah yang cukup besar dalam peraihan Nobel antara pria dan wanita. Lalu, kategori apa saja yang umum ditempuh oleh wanita dalam ilmu pengetahuan?
+
+```{r message=FALSE}
+# Menghitung proporsi pemenang wanita per dekade
+nobel$female_winner <- nobel$Gender == 'female'
+prop_female_winners <- nobel %>%
+  group_by(decade, Category) %>%
+  summarize(mean_fem = mean(female_winner, na.rm = TRUE))
+
+# Membuat plot
+ggplot(prop_female_winners, aes(x=decade, y=mean_fem, color=Category)) +
+  geom_line() +
+  labs(title="Wanita dalam Penghargaan Nobel per Kategori Ilmu") +
+  theme_few()
+```
+
+## Wanita Pertama Pemenang Penghargaan Nobel
+
+Plot di atas walau terlihat agak berantakan, namun ia memperlihatkan tren dan pola yang cukup menarik. Wanita pemenang Nobel lebih banyak berkiprah di bidang **sastra**, **kimia**, dan **perdamaian**. Walau tren di bidang kesehatan cukup banyak di tahun 1990-an, namun menurun hingga tahun 2022.
+
+Melihat data di atas, mungkin muncul rasa penasaran: "Siapakah wanita pertama yang memenangkan penghargaan Nobel? Kategori apa?"
+
+```{r}
+# Mengambil data wanita pertama peraih Nobel
+first_female <- head(nobel %>%
+  filter(Gender == 'female') %>%
+  arrange(Year), 1)
+
+# Print wanita pertama
+first_female%>%select(-Motivation)
+```
+
+![Marie Curie, Wanita Pertama Peraih Nobel](img/202101071227-main.jpg)
+
+## Pemenang Beruntun
+
+Untuk sebagian besar ilmuan/penulis/aktivis, memenangkan penghargaan Nobel tentu saja menjadi sebuah pencapaian luar biasa. Tetapi untuk beberapa orang, satu itu tidak cukup, beberapa dari mereka memenangkan penghargaan tersebut lebih dari satu kali. Siapa saja orang yang beruntung itu?
+
+```{r}
+dup_name <- nobel %>%
+  group_by(Firstname, Surname) %>%
+  filter(n()>1)
+dup_name%>%select(-Motivation)
+```
+
+## Berapa Umur Para Ilmuan saat Meraih Nobel?
+
+Daftar nama berulang di atas memunculkan satu nama yang mungkin sudah tidak asing, Marie Curie. Ia adalah ilmuan Polandia yang mendapatkan medali Nobel dalam bidang fisika karena jasanya menemukan radiasi, serta dalam bidang kimia karena telah berhasil mengisolasi radium dan polonium. John Bardeen juga mendapatkan medali sebanyak dua kali dalam bidang fisika karena penemuannya pada transistor dan superkonduktivitas. Frederick Sanger mendapatkan dua kali di bidang kimia. Linus Carl Pauling pertama kali mendapat medali di bidang kimia lalu perdamaian karena perannya dalam mengampanyekan pelucutan nuklir.
+
+Nah, mari kita lihat di umur berapa para peraih Nobel mendapatkan penghargaan? (Biar bisa ngira-ngira "kapan ya gue bisa kek mereka?")
+
+```{r warning=FALSE, message=FALSE}
+# Menghitung umur peraih Nobel
+nobel['BornYear'] <- substr(nobel$Born,1,4)
+nobel['age'] <- nobel$Year - as.integer(nobel$BornYear)
+
+# Membuat plot umur pemenang Nobel
+ggplot(nobel, aes(x=Year, y=age)) +
+  geom_point() +
+  geom_smooth(method = 'lm') +
+  labs(title = "Umur Para Pemenang Penghargaan Nobel")
+```
+
+## Perbedaan Umur antara Kategori Ilmu
+
+Grafik plot di atas memberikan sangat banyak informasi. Kita bisa melihat bahwa sebagian besar orang menerima penghargaan Nobel saat umur mereka sekitar 55 tahun, tetapi saat ini rata-rata ada di umur 63. Tetapi ada perbedaan yang besar antara para pemenang ini, walau sebagian besar umur mereka di atas 50, tetapi ada pula yang menerimanya saat berusia sangat muda.
+
+Kita juga dapat melihat kepadatan titik pada grafik di atas cenderung naik dibandingkan tahun 1900-an. Selain itu, semakin mendekati hari ini semakin banyak medali yang dibagikan, maka semakin banyak pula para pemenang. Kita juga melihat bahwa ada kekosongan, yang tentunya diakibatkan oleh terjadinya Perang Dunia II (1939-1945) saat itu.
+
+Sekarang, mari kita lihat umur penerima Nobel per kategori ilmu:
+
+```{r warning=FALSE, message=FALSE}
+# Sama seperti plot di atas, namun dibagi per kategori
+ggplot(nobel, aes(x=Year, y=age)) +
+  geom_point() +
+  geom_smooth(method = 'lm') +
+  facet_wrap(~ Category, ncol=2) +
+  labs(title = "Pemenang Nobel per Kategori")
+```
+
+## Pemenang Tertua dan Termuda
+
+Semakin banyak grafik yang menarik di sini! Mari kita lihat bahwa pemenang dari kelompok keilmuan kimia, kesehatan, dan fisika semakin ke sini semakin tua. Tren ini lebih terlihat di fisika, yang jika dulu rata-rata usia peraih Nobel di bawah 50, kini hampir di 70 tahun. Sastra dan ekonomi lebih stabil. Kita juga dapat melihat bahwa ekonomi merupakan kategori yang baru. Tetapi kategori perdamaian trennya justru lebih muda.
+
+Dalam kategori perdamaian kita bisa melihat bahwa ada seseorang yang namanya sudah menempel di sumbu-x grafik tersebut. Hal ini menimbulkan pertanyaan: Siapakah orang tertua dan termuda peraih penghargaan Nobel?
+
+```{r}
+# Orang peraih penghargaan Nobel tertua
+head(nobel %>%
+  arrange(desc(age)), 1)
+```
+
+```{r}
+# Orang peraih penghargaan Nobel termuda
+head(nobel %>%
+       arrange(age), 2)
+```
+
+## Sekarang Giliranmu!
+
+Yes! Akhirnya kita berada pada penghujung tulisan. Sekarang giliranmu untuk meraih Nobel di masa yang akan datang. Tak perlu cemas, kita bisa lihat bahwa John Goodenough berusia **97 tahun** ketika mendapatkan medali Nobel di bidang kimia, karena kontribusinya dalam perkembangan baterai lithium-ion! Kita juga harus punya semangat seperti Malala Yousafzai yang mendapatkan medali Nobel Perdamaian saat berumur **17 tahun** karena perjuangannya terhadap kebebasan dan pendidikan kepada anak-anak.
+
+[!["Aku adalah salah satu dari 66 juta wanita yang tercabut pendidikannya" -Malala Yousafzai](img/malalaquote2.webp)](https://www.nobelprize.org/prizes/peace/2014/yousafzai/lecture/)
+
+Sekian dan terima kasih.
+
+***Salam Maria, penuh rahmat, Tuhan sertamu.***

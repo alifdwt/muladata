@@ -1,0 +1,59 @@
+[
+  {
+    "listing": "/backup-landing/index.html",
+    "items": []
+  },
+  {
+    "listing": "/ide-data/index.html",
+    "items": [
+      "/ide-data/netflix-2023/index.html",
+      "/ide-data/transjakarta-2021/index.html",
+      "/ide-data/nobel-prizes/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/opini/pendidikan-data/index.html",
+      "/opini/r-atau-python/index.html",
+      "/opini/statistik-atau-koding/index.html",
+      "/proyek-data/ppdb-bogor/index.html",
+      "/ide-data/netflix-2023/index.html",
+      "/ide-data/transjakarta-2021/index.html",
+      "/ide-data/nobel-prizes/index.html",
+      "/data-peta/lulus-dua-digit/index.html",
+      "/data-peta/skill-penting-data/index.html",
+      "/data-peta/karir-non-stem/index.html"
+    ]
+  },
+  {
+    "listing": "/opini/index.html",
+    "items": [
+      "/opini/pendidikan-data/index.html",
+      "/opini/r-atau-python/index.html",
+      "/opini/statistik-atau-koding/index.html"
+    ]
+  },
+  {
+    "listing": "/proyek-data/index.html",
+    "items": [
+      "/proyek-data/ppdb-bogor/index.html"
+    ]
+  },
+  {
+    "listing": "/tentang-karir/index.html",
+    "items": [
+      "/tentang-karir/lulus-dua-digit/index.html",
+      "/tentang-karir/skill-penting-data/index.html",
+      "/tentang-karir/karir-non-stem/index.html"
+    ]
+  },
+  {
+    "listing": "/data-peta/index.html",
+    "items": [
+      "/data-peta/lulus-dua-digit/index.html",
+      "/data-peta/skill-penting-data/index.html",
+      "/data-peta/karir-non-stem/index.html"
+    ]
+  }
+]

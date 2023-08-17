@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alif Dewantara">
+<meta name="dcterms.date" content="2023-02-21">
+<meta name="description" content="Mengetahui statistik tayangan layanan streaming film dan TV Series terbesar di dunia.">
+
+<title>Muladata - Grafik Top 10 Netflix 2021-2023</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9H3H12J21Y"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9H3H12J21Y', { 'anonymize_ip': true});
+</script>
+
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<meta property="og:title" content="Muladata - Grafik Top 10 Netflix 2021-2023">
+<meta property="og:description" content="Mengetahui statistik tayangan layanan streaming film dan TV Series terbesar di dunia.">
+<meta property="og:image" content="https://muladata.github.io/ide-data/netflix-2023/netflix-new-logo.png">
+<meta property="og:site-name" content="Muladata">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
+<meta name="twitter:title" content="Muladata - Grafik Top 10 Netflix 2021-2023">
+<meta name="twitter:description" content="Mengetahui statistik tayangan layanan streaming film dan TV Series terbesar di dunia.">
+<meta name="twitter:image" content="https://muladata.github.io/ide-data/netflix-2023/netflix-new-logo.png">
+<meta name="twitter:site" content="@alifdwt">
+<meta name="twitter:image-height" content="720">
+<meta name="twitter:image-width" content="1280">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo-color.png" alt="Muladata brand" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../proyek-data/index.html" rel="" target="">
+ <span class="menu-text">Proyek Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ide-data/index.html" rel="" target="">
+ <span class="menu-text">Ide Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../data-peta/index.html" rel="" target="">
+ <span class="menu-text">Data Peta</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../opini/index.html" rel="" target="">
+ <span class="menu-text">Opini</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tentang-muladata" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tentang Muladata</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tentang-muladata">    
+        <li>
+    <a class="dropdown-item" href="../../about.html" rel="" target="">
+ <span class="dropdown-text">Siapa Saya?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../alifdwt.github.io" rel="" target="">
+ <span class="dropdown-text">Kontributor</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:aputradewantara@gmail.com" rel="" target="">
+ <span class="dropdown-text">Hubungi Saya</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Grafik Top 10 Netflix 2021-2023</h1>
+                  <div>
+        <div class="description">
+          <p>Mengetahui statistik tayangan layanan streaming film dan TV Series terbesar di dunia.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Analisis Data</div>
+                <div class="quarto-category">R</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alif Dewantara </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 21, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#netflix" id="toc-netflix" class="nav-link active" data-scroll-target="#netflix">Netflix</a></li>
+  <li><a href="#top-10-netflix" id="toc-top-10-netflix" class="nav-link" data-scroll-target="#top-10-netflix">Top 10 Netflix</a>
+  <ul class="collapse">
+  <li><a href="#kategori-apa-saja-yang-paling-diminati-pengguna-netflix" id="toc-kategori-apa-saja-yang-paling-diminati-pengguna-netflix" class="nav-link" data-scroll-target="#kategori-apa-saja-yang-paling-diminati-pengguna-netflix">Kategori Apa Saja yang Paling Diminati Pengguna Netflix?</a></li>
+  <li><a href="#apa-acara-tv-yang-paling-diminati" id="toc-apa-acara-tv-yang-paling-diminati" class="nav-link" data-scroll-target="#apa-acara-tv-yang-paling-diminati">Apa Acara TV yang Paling Diminati?</a></li>
+  <li><a href="#apa-film-yang-paling-diminati" id="toc-apa-film-yang-paling-diminati" class="nav-link" data-scroll-target="#apa-film-yang-paling-diminati">Apa Film yang Paling Diminati?</a></li>
+  <li><a href="#rata-rata" id="toc-rata-rata" class="nav-link" data-scroll-target="#rata-rata">Rata-rata</a></li>
+  </ul></li>
+  <li><a href="#acara-terpopuler-pada-januari-februari-2023" id="toc-acara-terpopuler-pada-januari-februari-2023" class="nav-link" data-scroll-target="#acara-terpopuler-pada-januari-februari-2023">Acara Terpopuler pada Januari-Februari 2023</a>
+  <ul class="collapse">
+  <li><a href="#acara-tv-terpopuler" id="toc-acara-tv-terpopuler" class="nav-link" data-scroll-target="#acara-tv-terpopuler">Acara TV Terpopuler</a></li>
+  <li><a href="#film-terpopuler" id="toc-film-terpopuler" class="nav-link" data-scroll-target="#film-terpopuler">Film Terpopuler</a></li>
+  </ul></li>
+  <li><a href="#bagaimana-urutan-top-10-acara-tv-dan-film-per-negara" id="toc-bagaimana-urutan-top-10-acara-tv-dan-film-per-negara" class="nav-link" data-scroll-target="#bagaimana-urutan-top-10-acara-tv-dan-film-per-negara">Bagaimana Urutan Top 10 Acara TV dan Film per Negara?</a>
+  <ul class="collapse">
+  <li><a href="#acara-tv-terpopuler-per-negara" id="toc-acara-tv-terpopuler-per-negara" class="nav-link" data-scroll-target="#acara-tv-terpopuler-per-negara">Acara TV Terpopuler per Negara</a></li>
+  <li><a href="#acara-tv-terpopuler-di-indonesia" id="toc-acara-tv-terpopuler-di-indonesia" class="nav-link" data-scroll-target="#acara-tv-terpopuler-di-indonesia">Acara TV Terpopuler di Indonesia</a></li>
+  </ul></li>
+  <li><a href="#kesimpulan" id="toc-kesimpulan" class="nav-link" data-scroll-target="#kesimpulan">Kesimpulan</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/alifdwt/muladata.github.io/edit/main/ide-data/netflix-2023/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/alifdwt/muladata.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://commons.wikimedia.org/wiki/File:Netflix_iPhone.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Netflix_iPhone.jpg" class="img-fluid figure-img" alt="stockcatalog, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"></a></p>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Memuat library</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggthemes' was built under R version 4.3.1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'scales' was built under R version 4.3.1</code></pre>
+</div>
+</div>
+<section id="netflix" class="level2">
+<h2 class="anchored" data-anchor-id="netflix">Netflix</h2>
+<p>Siapa yang suka menonton tayangan di Netflix? Tentu saja banyak dari kita yang sudah mengetahui ketenaran karya-karya visual yang dipublikasikan oleh Netflix. Netflix sendiri merupakan salah satu layanan penyedia <em>streaming</em> film terbesar di dunia, yang <a href="https://en.wikipedia.org/wiki/Netflix">tersedia di 190 negara dengan jumlah orang yang berlangganan lebih dari 230 juta pada Januari 2023</a>.</p>
+</section>
+<section id="top-10-netflix" class="level2">
+<h2 class="anchored" data-anchor-id="top-10-netflix">Top 10 Netflix</h2>
+<p>Netflix telah menyediakan datasets dalam <a href="https://top10.netflix.com/">top10.netflix.com</a> yang berisi rekaman data yang telah dikumpulkan sejak 28 Juni 2021, yang mencangkup empat kategori: <strong>film</strong>, <strong>TV series</strong>, <strong>film non-Inggris</strong>, dan <strong>TV series non-Inggris</strong>. Data yang disediakan adalah tiga buah berkas berformat .tsv, yakni:</p>
+<ol type="1">
+<li><p><code>all-weeks-countries.tsv</code> : Dataset yang berisi data mingguan Netflix yang dibagi berdasarkan negara</p>
+<ul>
+<li><p><code>country_name</code> : nama negara</p></li>
+<li><p><code>country_iso</code> : singkatan negara</p></li>
+<li><p><code>week</code> : waktu (terbagi menjadi per minggu)</p></li>
+<li><p><code>category</code> : kategori, yang dibagi menjadi empat</p></li>
+<li><p><code>weekly_rank</code> : peringkat mingguan</p></li>
+<li><p><code>show_title</code> : judul tayangan</p></li>
+<li><p><code>season_title</code> : judul musim tayangan (untuk kategori TV Series dan TV Series Non-English)</p></li>
+<li><p><code>cumulative_weeks_in_top_10</code> : jumlah minggu tayangan tersebut ada di peringkat 10 teratas</p></li>
+</ul></li>
+<li><p><code>all-weeks-global.tsv</code> : Dataset yang berisi data Netflix secara global</p>
+<ul>
+<li><p><code>week</code> : waktu per minggu</p></li>
+<li><p><code>category</code> : kategori</p></li>
+<li><p><code>weekly_rank</code> : peringkat mingguan</p></li>
+<li><p><code>show_title</code> : judul tayangan</p></li>
+<li><p><code>season_title</code> : judul musim tayangan</p></li>
+<li><p><code>weekly_hours_viewed</code> : jumlah tayangan per jam per minggu</p></li>
+<li><p><code>cumulative_weeks_in_top_10</code> : jumlah minggu tayangan tersebut ada di peringkat 10 teratas</p></li>
+</ul></li>
+<li><p><code>most_popular</code> : Dataset yang berisi tontonan Netflix yang paling poluler 28 hari sebelum dataset tersebut dirilis (14 Januari 2023 - 12 Februari 2023)</p>
+<ul>
+<li><p><code>category</code> : kategori</p></li>
+<li><p><code>rank</code> : peringkat</p></li>
+<li><p><code>show_title</code> : judul tayangan</p></li>
+<li><p><code>season_title</code> : judul musim tayangan</p></li>
+<li><p><code>hours_viewed_first_28_days</code> : jumlah tayangan per jam dalam 28 hari ke belakang</p></li>
+</ul></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Memuat datasets</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>weeks_countries <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'datasets/all-weeks-countries.tsv'</span>, <span class="at">sep =</span> <span class="st">'</span><span class="sc">\t</span><span class="st">'</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>weeks_global <span class="ot">&lt;-</span>  <span class="fu">read.csv</span>(<span class="st">'datasets/all-weeks-global.tsv'</span>, <span class="at">sep =</span> <span class="st">'</span><span class="sc">\t</span><span class="st">'</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>most_popular <span class="ot">&lt;-</span>  <span class="fu">read.csv</span>(<span class="st">'datasets/most-popular.tsv'</span>, <span class="at">sep =</span> <span class="st">'</span><span class="sc">\t</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Dplyr sudah mengenali tipe data setiap kolom tersebut dengan benar, kecuali data <code>week</code>. Maka, kita akan mengubah tipe data tersebut dari <em>string</em> menjadi <em>date</em>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membenarkan data</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>weeks_global<span class="sc">$</span>week <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(weeks_global<span class="sc">$</span>week)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="kategori-apa-saja-yang-paling-diminati-pengguna-netflix" class="level3">
+<h3 class="anchored" data-anchor-id="kategori-apa-saja-yang-paling-diminati-pengguna-netflix">Kategori Apa Saja yang Paling Diminati Pengguna Netflix?</h3>
+<p>Mari kita mulai analisis dengan mengetahui jumlah jam tontonan di Netflix berdasarkan kategorinya.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengetahui rata-rate menit per kategori</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>world_ctg <span class="ot">&lt;-</span> weeks_global <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_world =</span> <span class="fu">mean</span>(weekly_hours_viewed)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_world))</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(world_ctg, <span class="fu">aes</span>(<span class="at">x=</span>category, <span class="at">y=</span>mean_world)) <span class="sc">+</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> category), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste</span>(<span class="fu">round</span>(mean_world <span class="sc">/</span> <span class="fl">1e6</span>, <span class="dv">2</span>), <span class="st">"Juta"</span>))) <span class="sc">+</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Rata-Rata Menit per Kategori"</span>,</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Kategori apa yang paling diminati penonton Netflix?"</span>) <span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/world_ctg-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Dari plot di atas dapat diketahui bahwa penonton acara TV di Netflix memiliki tayangan yang paling banyak ditonton, yaitu rata-rata sebanyak 35,8 juta jam! Hal ini tentu saja tidak mengherankan, karena tayangan TV memiliki beberapa episode per musimnya. Tetapi, karya-karya berbahasa Inggris menempati dua urutan teratas dibandingkan non-Inggris.</p>
+<p>Selanjutnya, kita akan mencoba untuk menemukan rata-rata tayangan per jam Netflix per minggunya.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weeks_global, <span class="fu">aes</span>(<span class="at">x=</span>week, <span class="at">y=</span>weekly_hours_viewed, <span class="at">color=</span>category)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha=</span><span class="fl">0.6</span>, <span class="at">size=</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_fivethirtyeight</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/weeks_global_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Tentunya, tayangan TV berbahasa Inggris mendominasi angka rata-rata tinggi.</p>
+<p>Tetapi uniknya, plot di atas menunjukkan bahwa pada September 2021 sampai Oktober 2021, jumlah rata-rata tontonan per minggu per jam TV (Non-English) mendapati kenaikan yang sangat signifikan, bahkan belum ada kategori lain yang bisa menandinginya dalam tahun-tahun setelahnya. Ada apakah gerangan?</p>
+</section>
+<section id="apa-acara-tv-yang-paling-diminati" class="level3">
+<h3 class="anchored" data-anchor-id="apa-acara-tv-yang-paling-diminati">Apa Acara TV yang Paling Diminati?</h3>
+<p>Sekarang mari kita menganalisis acara TV. Popularitas diukur dari total angka jam penonton Netflix sedunia menonton tiap judul tayangan.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>top_tv_shows <span class="ot">&lt;-</span> weeks_global <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(season_title, category) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_tv =</span> <span class="fu">mean</span>(weekly_hours_viewed)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_tv)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'season_title'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>top_tv_shows</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["season_title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["category"],"name":[2],"type":["chr"],"align":["left"]},{"label":["mean_tv"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Wednesday: Season 1","2":"TV (English)","3":"140857500"},{"1":"DAHMER: Monster: The Jeffrey Dahmer Story","2":"TV (English)","3":"137495714"},{"1":"Squid Game: Season 1","2":"TV (Non-English)","3":"114475000"},{"1":"Stranger Things 4","2":"TV (English)","3":"99332105"},{"1":"You: Season 4","2":"TV (English)","3":"92070000"},{"1":"Ginny & Georgia: Season 2","2":"TV (English)","3":"91666667"},{"1":"The Witcher: Season 2","2":"TV (English)","3":"86581667"},{"1":"The Watcher: Season 1","2":"TV (English)","3":"79006000"},{"1":"Sex Education: Season 3","2":"TV (English)","3":"74625000"},{"1":"Cobra Kai: Season 4","2":"TV (English)","3":"73237500"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(top_tv_shows, <span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(season_title, mean_tv), <span class="at">y=</span>mean_tv)) <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill=</span><span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Penonton Mingguan per jam"</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"10 Peringkat Teratas TV Series dari Netflix"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"(28/06/2021 - 12/02/2023)"</span>) <span class="sc">+</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">unit_format</span>(<span class="at">unit =</span> <span class="st">"Jt"</span>, <span class="at">scale =</span> <span class="fl">1e-6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/top_tv_show_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Penemuan di atas memberikan hasil yang menarik: Sembilan dari sepuluh tayangan TV series adalah TV Series berbahasa Inggris, sementara hanya satu (Squid Game) yang merupakan TV series non-Inggris.</p>
+<p>Selain itu, ditemukan juga bahwa <em>line plot</em> yang menunjukkan tayangan TV series non-Inggris yang menjulang tinggi dari 2021/09/26 sampai 2021/10/17 disebabkan oleh populernya Squid Game: Season 1.</p>
+</section>
+<section id="apa-film-yang-paling-diminati" class="level3">
+<h3 class="anchored" data-anchor-id="apa-film-yang-paling-diminati">Apa Film yang Paling Diminati?</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data film</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>film <span class="ot">&lt;-</span> weeks_global <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(category <span class="sc">==</span> <span class="fu">c</span>(<span class="st">'Films (English)'</span>, <span class="st">'Films (Non-English)'</span>))</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung rata-rata menit film</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>top_film <span class="ot">&lt;-</span> film <span class="sc">%&gt;%</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(show_title, category) <span class="sc">%&gt;%</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_film =</span> <span class="fu">mean</span>(weekly_hours_viewed)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_film)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'show_title'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>top_film</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["show_title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["category"],"name":[2],"type":["chr"],"align":["left"]},{"label":["mean_film"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Don't Look Up","2":"Films (English)","3":"69116000"},{"1":"The Gray Man","2":"Films (English)","3":"63760000"},{"1":"Enola Holmes 2","2":"Films (English)","3":"63470000"},{"1":"Red Notice","2":"Films (English)","3":"63426667"},{"1":"Day Shift","2":"Films (English)","3":"59950000"},{"1":"Me Time","2":"Films (English)","3":"57895000"},{"1":"Purple Hearts","2":"Films (English)","3":"57475000"},{"1":"The Unforgivable","2":"Films (English)","3":"57213333"},{"1":"The Adam Project","2":"Films (English)","3":"56802500"},{"1":"Your Place or Mine","2":"Films (English)","3":"51230000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(top_film, <span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(show_title, mean_film), <span class="at">y=</span>mean_film)) <span class="sc">+</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Penonton Mingguan per jam"</span>,</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Peringkat 10 Teratas Dunia Film dari Netflix"</span>,</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"(28/06/2021 - 12/02/2023)"</span>) <span class="sc">+</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">unit_format</span>(<span class="at">unit =</span> <span class="st">"Jt"</span>, <span class="at">scale =</span> <span class="fl">1e-6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/top_film_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="rata-rata" class="level3">
+<h3 class="anchored" data-anchor-id="rata-rata">Rata-rata</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data kumulatif</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>season <span class="ot">&lt;-</span> <span class="fu">merge</span>(weeks_global, top_tv_shows, <span class="at">by =</span> <span class="st">'season_title'</span>, <span class="at">all.y =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat data kumulatif</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>cum <span class="ot">&lt;-</span> season <span class="sc">%&gt;%</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(season_title) <span class="sc">%&gt;%</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">cumulative_weeks =</span> <span class="fu">mean</span>(cumulative_weeks_in_top_10)) <span class="sc">%&gt;%</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(cumulative_weeks))</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>cum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["season_title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["cumulative_weeks"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Squid Game: Season 1","2":"10.5"},{"1":"Stranger Things 4","2":"10.0"},{"1":"Wednesday: Season 1","2":"6.5"},{"1":"DAHMER: Monster: The Jeffrey Dahmer Story","2":"4.0"},{"1":"Ginny & Georgia: Season 2","2":"3.5"},{"1":"Sex Education: Season 3","2":"3.5"},{"1":"The Witcher: Season 2","2":"3.5"},{"1":"The Watcher: Season 1","2":"3.0"},{"1":"Cobra Kai: Season 4","2":"2.5"},{"1":"You: Season 4","2":"1.0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(cum, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(season_title, cumulative_weeks), <span class="at">y =</span> cumulative_weeks)) <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> cumulative_weeks)) <span class="sc">+</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">'Rata-rata Top Chart TV'</span>) <span class="sc">+</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/cumulative_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Diluar dari temuan Peringkat 10 Teratas TV Series di Dunia dari Netflix, kita akan menemukan bahwa <strong>Squid Games: Season 1</strong> menempati peringkat teratas jika kita menghitungnya dari <code>cumulative_weeks_in_top_10</code> dengan rata-rata <strong>10.5</strong> minggu. Coba bandingkan dengan <strong>Wednesday: Season 1</strong> yang menjadi acara dengan jumlah jam paling banyak, memiliki angka kumulatif mingguan <strong>6,5 minggu</strong>, serta <strong>DAHMER</strong> yang memiliki angka kumulatif mingguan berjumlah 4.</p>
+</section>
+</section>
+<section id="acara-terpopuler-pada-januari-februari-2023" class="level2">
+<h2 class="anchored" data-anchor-id="acara-terpopuler-pada-januari-februari-2023">Acara Terpopuler pada Januari-Februari 2023</h2>
+<section id="acara-tv-terpopuler" class="level3">
+<h3 class="anchored" data-anchor-id="acara-tv-terpopuler">Acara TV Terpopuler</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data tayangan terpopuler</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>most_popular_show <span class="ot">&lt;-</span> most_popular <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(show_title, season_title, category, rank) <span class="sc">%&gt;%</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_hours_viewed =</span> <span class="fu">mean</span>(hours_viewed_first_28_days)) <span class="sc">%&gt;%</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_hours_viewed)) <span class="sc">%&gt;%</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'show_title', 'season_title', 'category'.
+You can override using the `.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>most_popular_show</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["show_title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["season_title"],"name":[2],"type":["chr"],"align":["left"]},{"label":["category"],"name":[3],"type":["chr"],"align":["left"]},{"label":["rank"],"name":[4],"type":["int"],"align":["right"]},{"label":["mean_hours_viewed"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"Squid Game","2":"Squid Game: Season 1","3":"TV (Non-English)","4":"1","5":"1650450000"},{"1":"Stranger Things","2":"Stranger Things 4","3":"TV (English)","4":"1","5":"1352090000"},{"1":"Wednesday","2":"Wednesday: Season 1","3":"TV (English)","4":"2","5":"1237150000"},{"1":"DAHMER","2":"DAHMER: Monster: The Jeffrey Dahmer Story","3":"TV (English)","4":"3","5":"856220000"},{"1":"Money Heist","2":"Money Heist: Part 5","3":"TV (Non-English)","4":"2","5":"792230000"},{"1":"Bridgerton","2":"Bridgerton: Season 2","3":"TV (English)","4":"4","5":"656260000"},{"1":"Bridgerton","2":"Bridgerton: Season 1","3":"TV (English)","4":"5","5":"625490000"},{"1":"Money Heist","2":"Money Heist: Part 4","3":"TV (Non-English)","4":"3","5":"619010000"},{"1":"Stranger Things","2":"Stranger Things 3","3":"TV (English)","4":"6","5":"582100000"},{"1":"Lucifer","2":"Lucifer: Season 5","3":"TV (English)","4":"7","5":"569480000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot popular_show</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(most_popular_show, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(season_title, mean_hours_viewed), <span class="at">y =</span> mean_hours_viewed)) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">'Acara TV Terpopuler pada Januari-Februari 2023'</span>) <span class="sc">+</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">unit_format</span>(<span class="at">unit =</span> <span class="st">"Jt"</span>, <span class="at">scale =</span> <span class="fl">1e-6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/popular_show_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="film-terpopuler" class="level3">
+<h3 class="anchored" data-anchor-id="film-terpopuler">Film Terpopuler</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Memfilter data film</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>popular_film <span class="ot">&lt;-</span> most_popular <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(category <span class="sc">==</span> <span class="fu">c</span>(<span class="st">'Films (English)'</span>, <span class="st">'Films (Non-English)'</span>))</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Mendapatkan data film terpopuler</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>most_popular_film <span class="ot">&lt;-</span> popular_film <span class="sc">%&gt;%</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(show_title, category, rank) <span class="sc">%&gt;%</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_hours_viewed =</span> <span class="fu">mean</span>(hours_viewed_first_28_days)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_hours_viewed)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'show_title', 'category'. You can override
+using the `.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>most_popular_film</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["show_title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["category"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rank"],"name":[3],"type":["int"],"align":["right"]},{"label":["mean_hours_viewed"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Red Notice","2":"Films (English)","3":"1","4":"364020000"},{"1":"Bird Box","2":"Films (English)","3":"3","4":"282020000"},{"1":"The Gray Man","2":"Films (English)","3":"5","4":"253870000"},{"1":"Extraction","2":"Films (English)","3":"7","4":"231340000"},{"1":"The Unforgivable","2":"Films (English)","3":"9","4":"214700000"},{"1":"Blood Red Sky","2":"Films (Non-English)","3":"2","4":"110520000"},{"1":"All Quiet on the Western Front","2":"Films (Non-English)","3":"4","4":"101360000"},{"1":"Through My Window","2":"Films (Non-English)","3":"6","4":"92440000"},{"1":"Below Zero","2":"Films (Non-English)","3":"8","4":"78300000"},{"1":"Loving Adults","2":"Films (Non-English)","3":"10","4":"67340000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot most_popular_film</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(most_popular_film, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(show_title, mean_hours_viewed), <span class="at">y =</span> mean_hours_viewed)) <span class="sc">+</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">'10 Film Terpopuler pada Januari-Februari'</span>) <span class="sc">+</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>() <span class="sc">+</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">unit_format</span>(<span class="at">unit =</span> <span class="st">"Jt"</span>, <span class="at">scale =</span> <span class="fl">1e-6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/msp_plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="bagaimana-urutan-top-10-acara-tv-dan-film-per-negara" class="level2">
+<h2 class="anchored" data-anchor-id="bagaimana-urutan-top-10-acara-tv-dan-film-per-negara">Bagaimana Urutan Top 10 Acara TV dan Film per Negara?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengetahui kurun waktu</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>minimum_week <span class="ot">&lt;-</span> <span class="fu">min</span>(weeks_countries<span class="sc">$</span>week)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>maximum_week <span class="ot">&lt;-</span> <span class="fu">max</span>(weeks_countries<span class="sc">$</span>week)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>duration <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(maximum_week) <span class="sc">-</span> <span class="fu">as.Date</span>(minimum_week)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Hari pertama = "</span>, minimum_week))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hari pertama =  2021-07-04"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Hari terakhir = "</span>, maximum_week))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hari terakhir =  2023-02-12"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(duration)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Time difference of 588 days</code></pre>
+</div>
+</div>
+<section id="acara-tv-terpopuler-per-negara" class="level3">
+<h3 class="anchored" data-anchor-id="acara-tv-terpopuler-per-negara">Acara TV Terpopuler per Negara</h3>
+<section id="informasi-umum" class="level4">
+<h4 class="anchored" data-anchor-id="informasi-umum">Informasi Umum</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data acara tv terpopuler</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>country_most_popular_tv <span class="ot">&lt;-</span> <span class="fu">merge</span>(weeks_countries, most_popular_show, <span class="at">by =</span> <span class="st">'season_title'</span>, <span class="at">all.y =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung data</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>country_most_popular_tv_summarized <span class="ot">&lt;-</span> country_most_popular_tv <span class="sc">%&gt;%</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country_name) <span class="sc">%&gt;%</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_cumulative =</span> <span class="fu">mean</span>(cumulative_weeks_in_top_10)) <span class="sc">%&gt;%</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_cumulative))</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(country_most_popular_tv_summarized, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(country_name, mean_cumulative), <span class="at">y =</span> mean_cumulative)) <span class="sc">+</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">'Rata-rata Minggu Kumulatif per Negara yang Menonton Acara TV Terbaik Netflix'</span>) <span class="sc">+</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/most_pop_tv_country-1.png" class="img-fluid" width="768"></p>
+</div>
+</div>
+</section>
+<section id="acara-tv-terpopuler-per-negara-1" class="level4">
+<h4 class="anchored" data-anchor-id="acara-tv-terpopuler-per-negara-1">Acara TV Terpopuler per Negara</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data acara tv terpopuler per negara</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a> final_tv <span class="ot">&lt;-</span> country_most_popular_tv <span class="sc">%&gt;%</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country_name, season_title) <span class="sc">%&gt;%</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_rank =</span> <span class="fu">round</span>(<span class="fu">mean</span>(weekly_rank)), <span class="at">mean_cum =</span> <span class="fu">round</span>(<span class="fu">mean</span>(cumulative_weeks_in_top_10))) <span class="sc">%&gt;%</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_cum))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'country_name'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil nilai maksimal</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>final_tv_max <span class="ot">&lt;-</span> final_tv <span class="sc">%&gt;%</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(country_name) <span class="sc">%&gt;%</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">top_n</span>(<span class="dv">1</span>, mean_cum)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>final_tv_max</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["country_name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["season_title"],"name":[2],"type":["chr"],"align":["left"]},{"label":["mean_rank"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean_cum"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"India","2":"Squid Game: Season 1","3":"4","4":"14"},{"1":"Pakistan","2":"Money Heist: Part 5","3":"6","4":"14"},{"1":"Ukraine","2":"Bridgerton: Season 2","3":"6","4":"13"},{"1":"Bangladesh","2":"Squid Game: Season 1","3":"5","4":"12"},{"1":"Serbia","2":"Stranger Things 4","3":"4","4":"11"},{"1":"Czech Republic","2":"Squid Game: Season 1","3":"4","4":"10"},{"1":"Hungary","2":"Squid Game: Season 1","3":"3","4":"10"},{"1":"Japan","2":"Squid Game: Season 1","3":"3","4":"10"},{"1":"Russia","2":"Squid Game: Season 1","3":"4","4":"10"},{"1":"Belgium","2":"Stranger Things 4","3":"3","4":"9"},{"1":"Bulgaria","2":"Stranger Things 4","3":"3","4":"9"},{"1":"Croatia","2":"Stranger Things 4","3":"3","4":"9"},{"1":"Slovakia","2":"Squid Game: Season 1","3":"3","4":"9"},{"1":"Slovakia","2":"Stranger Things 4","3":"3","4":"9"},{"1":"Slovenia","2":"Stranger Things 4","3":"3","4":"9"},{"1":"United Kingdom","2":"Stranger Things 4","3":"3","4":"9"},{"1":"Australia","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Austria","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Bahrain","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Bolivia","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Canada","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Denmark","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Egypt","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Egypt","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Estonia","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Estonia","2":"Stranger Things 4","3":"2","4":"8"},{"1":"Finland","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Finland","2":"Stranger Things 4","3":"2","4":"8"},{"1":"Germany","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Greece","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Greece","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Hong Kong","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Iceland","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Ireland","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Israel","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Italy","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Italy","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Jordan","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Jordan","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Kuwait","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Latvia","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Latvia","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Lebanon","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Lebanon","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Lithuania","2":"Stranger Things 4","3":"2","4":"8"},{"1":"Luxembourg","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Malaysia","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Malta","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Mauritius","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Morocco","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Morocco","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Netherlands","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Nigeria","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Norway","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Oman","2":"Squid Game: Season 1","3":"2","4":"8"},{"1":"Poland","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Portugal","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Qatar","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Romania","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"Saudi Arabia","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"South Africa","2":"Squid Game: Season 1","3":"4","4":"8"},{"1":"South Korea","2":"Squid Game: Season 1","3":"5","4":"8"},{"1":"Sri Lanka","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Sweden","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Switzerland","2":"Stranger Things 4","3":"4","4":"8"},{"1":"Turkey","2":"Money Heist: Part 5","3":"5","4":"8"},{"1":"Turkey","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"Turkey","2":"Stranger Things 4","3":"3","4":"8"},{"1":"United Arab Emirates","2":"Squid Game: Season 1","3":"3","4":"8"},{"1":"United States","2":"Stranger Things 4","3":"3","4":"8"},{"1":"Cyprus","2":"Stranger Things 4","3":"2","4":"7"},{"1":"France","2":"Stranger Things 4","3":"3","4":"7"},{"1":"Kenya","2":"Squid Game: Season 1","3":"3","4":"7"},{"1":"Maldives","2":"Stranger Things 4","3":"2","4":"7"},{"1":"New Zealand","2":"Stranger Things 4","3":"3","4":"7"},{"1":"Nicaragua","2":"Squid Game: Season 1","3":"5","4":"7"},{"1":"Spain","2":"Stranger Things 4","3":"3","4":"7"},{"1":"Argentina","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Argentina","2":"Stranger Things 4","3":"2","4":"6"},{"1":"Argentina","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Bahamas","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Brazil","2":"Squid Game: Season 1","3":"5","4":"6"},{"1":"Brazil","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Brazil","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Chile","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Chile","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Chile","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Colombia","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Colombia","2":"Stranger Things 4","3":"2","4":"6"},{"1":"Colombia","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Costa Rica","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Costa Rica","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Ecuador","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Ecuador","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"El Salvador","2":"Stranger Things 4","3":"3","4":"6"},{"1":"El Salvador","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Guadeloupe","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Guadeloupe","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Guatemala","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Guatemala","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Honduras","2":"Squid Game: Season 1","3":"5","4":"6"},{"1":"Honduras","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Indonesia","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Indonesia","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Jamaica","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Jamaica","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Jamaica","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Martinique","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Mexico","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Mexico","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Mexico","2":"Wednesday: Season 1","3":"2","4":"6"},{"1":"New Caledonia","2":"Stranger Things 4","3":"3","4":"6"},{"1":"New Caledonia","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Panama","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Paraguay","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Paraguay","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Paraguay","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Peru","2":"Squid Game: Season 1","3":"2","4":"6"},{"1":"Peru","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Peru","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Philippines","2":"Squid Game: Season 1","3":"5","4":"6"},{"1":"Philippines","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Philippines","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Réunion","2":"Squid Game: Season 1","3":"3","4":"6"},{"1":"Réunion","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Réunion","2":"Wednesday: Season 1","3":"3","4":"6"},{"1":"Singapore","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Singapore","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Taiwan","2":"Wednesday: Season 1","3":"5","4":"6"},{"1":"Thailand","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Trinidad and Tobago","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Trinidad and Tobago","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Trinidad and Tobago","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Uruguay","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Uruguay","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Venezuela","2":"Squid Game: Season 1","3":"2","4":"6"},{"1":"Venezuela","2":"Stranger Things 4","3":"3","4":"6"},{"1":"Venezuela","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Vietnam","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Vietnam","2":"Stranger Things 4","3":"4","4":"6"},{"1":"Vietnam","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Dominican Republic","2":"Squid Game: Season 1","3":"3","4":"5"},{"1":"Dominican Republic","2":"Stranger Things 4","3":"3","4":"5"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="acara-tv-terpopuler-di-indonesia" class="level3">
+<h3 class="anchored" data-anchor-id="acara-tv-terpopuler-di-indonesia">Acara TV Terpopuler di Indonesia</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil data Indonesia</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>tv_indonesia <span class="ot">&lt;-</span> country_most_popular_tv <span class="sc">%&gt;%</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(country_name <span class="sc">==</span> <span class="st">'Indonesia'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country_name, season_title) <span class="sc">%&gt;%</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_rank =</span> <span class="fu">round</span>(<span class="fu">mean</span>(weekly_rank)), <span class="at">mean_cum =</span> <span class="fu">round</span>(<span class="fu">mean</span>(cumulative_weeks_in_top_10))) <span class="sc">%&gt;%</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_cum))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'country_name'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>tv_indonesia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["country_name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["season_title"],"name":[2],"type":["chr"],"align":["left"]},{"label":["mean_rank"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean_cum"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Indonesia","2":"Squid Game: Season 1","3":"4","4":"6"},{"1":"Indonesia","2":"Wednesday: Season 1","3":"4","4":"6"},{"1":"Indonesia","2":"Stranger Things 4","3":"4","4":"5"},{"1":"Indonesia","2":"DAHMER: Monster: The Jeffrey Dahmer Story","3":"4","4":"4"},{"1":"Indonesia","2":"Money Heist: Part 5","3":"4","4":"4"},{"1":"Indonesia","2":"Bridgerton: Season 1","3":"8","4":"2"},{"1":"Indonesia","2":"Bridgerton: Season 2","3":"5","4":"2"},{"1":"Indonesia","2":"Stranger Things 3","3":"8","4":"2"},{"1":"Indonesia","2":"Money Heist: Part 4","3":"10","4":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot Indonesia</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tv_indonesia, <span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(season_title, mean_cum), <span class="at">y=</span>mean_cum)) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">'#E50914'</span>, <span class="at">color =</span> <span class="st">'#000000'</span>) <span class="sc">+</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">'Urutan rata-rata'</span>,</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">'Peringkat 10 Teratas Tayangan Netflix di Indonesia'</span>,</span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"(28/06/2021 - 12/02/2023)"</span>) <span class="sc">+</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_few</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/plot_data_indo-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="kesimpulan" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan">Kesimpulan</h2>
+<p>Acara TV berbahasa Inggris adalah yang paling populer di dunia dibandingkan dengan tiga kategori lainnya. Tetapi, Squid Game benar-benar melampaui seluruh tayangan Netflix ketika pengukuran standar digunakan.</p>
+<p><strong><em>Salam Maria, penuh rahmat, Tuhan sertamu.</em></strong></p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="quarto-dev/quarto-web" issue-term="title" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Hak Cipta © 2023 <a href="https://alifdwt.github.io/">Musim Semi Peking</a></div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alifdwt">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/alifdwt">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://fosstodon.org/@alifdwt">
+      <i class="bi bi-mastodon" role="img" aria-label="Mastodon">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/alifdwt">
+      <i class="bi bi-linkedin" role="img" aria-label="Linkedin">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://alifdwt.github.io">
+      <i class="bi bi-rss" role="img" aria-label="Muladata rss">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right"><a href="https://alifdwt.github.io/">Syarat dan Ketentuan</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

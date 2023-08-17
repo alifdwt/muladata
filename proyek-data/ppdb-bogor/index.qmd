@@ -1,0 +1,21 @@
+---
+title: "PPDB Bogor"
+description: "Menganalisis Penerimaan Peserta Didik Baru Bogor 2023"
+author: "Alif Dewantara"
+date: "2023-07-29"
+format: 
+  html: 
+    page-layout: full
+title-block-banner: true
+categories:
+  - Pendidikan
+  - Shiny
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus, est nec scelerisque maximus, quam dolor dignissim justo, at ullamcorper mauris neque eget diam. Cras ultricies, metus mollis dapibus finibus, libero augue porta libero, ac hendrerit enim felis eget magna. Vivamus eu elit placerat, tincidunt lacus nec, mollis eros. Ut pharetra sollicitudin eros in tempus. Sed tempus ultrices eleifend. In lobortis maximus justo id interdum. In tempus tempor dui vehicula pretium. Duis quis iaculis libero. Maecenas consequat, urna in bibendum sodales, odio est cursus nisi, eget facilisis orci dui ac diam. Aliquam erat volutpat. Sed dolor urna, commodo sit amet suscipit a, dapibus a nunc. Integer imperdiet lectus eget nibh tincidunt auctor sed eget quam. Duis euismod sed lacus non ultrices. Praesent fermentum faucibus facilisis.
+
+```{=html}
+<iframe height="600" width="100%" frameborder="no" src="https://alif-dewantara.shinyapps.io/PPDB-Bogor_ShinyApp/"> </iframe>
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus, est nec scelerisque maximus, quam dolor dignissim justo, at ullamcorper mauris neque eget diam. Cras ultricies, metus mollis dapibus finibus, libero augue porta libero, ac hendrerit enim felis eget magna. Vivamus eu elit placerat, tincidunt lacus nec, mollis eros. Ut pharetra sollicitudin eros in tempus. Sed tempus ultrices eleifend. In lobortis maximus justo id interdum. In tempus tempor dui vehicula pretium. Duis quis iaculis libero. Maecenas consequat, urna in bibendum sodales, odio est cursus nisi, eget facilisis orci dui ac diam. Aliquam erat volutpat. Sed dolor urna, commodo sit amet suscipit a, dapibus a nunc. Integer imperdiet lectus eget nibh tincidunt auctor sed eget quam. Duis euismod sed lacus non ultrices. Praesent fermentum faucibus facilisis.
+

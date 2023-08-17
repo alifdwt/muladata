@@ -1,0 +1,146 @@
+---
+pagetitle: "Muladata"
+page-layout: full
+title-block-banner: true
+title: |
+  <p style="font-size:2em;text-align:center;">MULADATA</p>
+description: |
+  <p style="text-align:center;">Historical Data Matters</p>
+#section-divs: false
+#editor: source
+#sidebar: false
+#search: false
+
+listing: 
+  - id: latest-content
+    contents: 
+    - /ide-data
+    - /opini
+    - /proyek-data
+    - /tentang-karir
+    - "!/ide-data/index.qmd"
+    - "!/opini/index.qmd"
+    - "!/proyek-data/index.qmd"
+    - "!/tentang-karir/index.qmd"
+    sort: "date desc"
+    type: grid
+    image-height: 200px
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    
+  - id: ide-data
+    contents: 
+    - ide-data
+    - "!/ide-data/index.qmd"
+    sort: "date desc"
+    type: grid
+    image-height: 200px
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    
+  - id: data-peta
+    contents: 
+    - /data-peta
+    - "!/data-peta/index.qmd"
+    sort: "date desc"
+    type: grid
+    image-height: 200px
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    
+  - id: opini
+    contents: 
+    - /opini
+    - "!/opini/index.qmd"
+    sort: "date desc"
+    type: grid
+    image-height: 200px
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+
+toc: false
+---
+
+::: content-container
+::: {.top-viz .yellow-background}
+::: grid
+::: {.g-col-12 .g-col-lg-6}
+## Kursi DPR Pasca Reformasi
+
+Perubahan besar terjadi pada dinamika perpolitikan Indonesia setelah Reformasi 1998. Grafik di bawah merepresentasikan posisi partai politik berdasarkan jumlah kursinya diurutkan dari yang terbanyak sampai tersedikit. PDI Perjuangan, yang selama era orde baru menjadi partai oposisi, masih bersaing dengan Golongan Karya walau kini telah menjadi koalisi.
+
+```{=html}
+<a class="content-button" href="https://github.com/alifdwt/Visualif/blob/main/Kabinet-Indo/Kabinet-Indo.R">Buka Github</a>
+```
+:::
+
+::: {.g-col-12 .g-col-lg-6}
+![](https://github.com/alifdwt/Visualif/raw/main/Kabinet-Indo/Kabinet-Indo.png)
+:::
+:::
+:::
+:::
+
+::: content-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec pharetra lacus. Ut ac sodales metus, eget vulputate libero. Nulla placerat, nisl sed ullamcorper imperdiet, lorem nunc lobortis urna, sit amet ultrices ex sem non justo.
+:::
+
+::: content-container
+# TULISAN TERAKHIR
+
+::: {#latest-content}
+:::
+:::
+
+::: content-container
+::: {.top-viz .yellow-background}
+::: grid
+::: {.g-col-12 .g-col-lg-8 .top-viz-text}
+## Sentimen Analisis Lagu-Lagu dari Artis Teratas Indonesia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec pharetra lacus. Ut ac sodales metus, eget vulputate libero. Nulla placerat, nisl sed ullamcorper imperdiet, lorem nunc lobortis urna, sit amet ultrices ex sem non justo. Donec maximus vestibulum nisi et commodo. Mauris elementum, magna quis volutpat sagittis, nibh felis ornare felis
+
+```{=html}
+<a class="content-button" href="https://github.com/alifdwt/Visualif/blob/main/Sentimen-Artis-Indo/sentimen-artis-indo.R">Buka Github</a>
+```
+:::
+
+::: {.g-col-12 .g-col-lg-4 .top-viz-text}
+![](https://github.com/alifdwt/Visualif/raw/main/Sentimen-Artis-Indo/sentimen-artis-indo.png)
+:::
+:::
+:::
+:::
+
+::: content-container
+# [IDE DATA](ide-data/index.qmd)
+
+::: {#ide-data}
+:::
+:::
+
+::: content-container
+# [DATA PETA](data-peta/index.qmd)
+
+::: {#data-peta}
+:::
+:::
+
+::: content-container
+# [OPINI](opini/index.qmd)
+
+::: {#opini}
+:::
+:::

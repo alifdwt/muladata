@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*-- scss:defaults --*/
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ddd !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #121212 !default;
+$black:    #000 !default;
+
+$blue:   #0D0887 !default;
+$indigo: #5601A4 !default;
+$purple: #900DA4 !default;
+$pink:   #BF3984 !default;
+$red:    #E16462 !default;
+$orange: #F89441 !default;
+$yellow: #FED336 !default;  
+$green:  #7AD151 !default;  
+$teal:   #2A788E !default;  
+$cyan:   #22A884 !default;
+
+$primary:       $yellow !default;
+$secondary:     $gray-500 !default;
+$success:       $green !default;
+$info:          $pink !default;
+$warning:       $yellow !default;
+$danger:        $orange !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
+$font-family-serif:           Barlow, serif !default;
+
+$font-size-base:              1.2rem !default;
+$headings-font-weight:        700 !default;
+
+$h1-font-size: $font-size-base * 2.35;
+$h2-font-size: $font-size-base * 1.8;
+$h3-font-size: $font-size-base * 1.45;
+$h4-font-size: $font-size-base * 1.1;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base * 0.8;
+
+$toc-font-size: 0.95rem;
+$sidebar-font-size: 1.1rem;
+$sidebar-font-size-section: 0.95rem;
+$footer-font-size: 0.95rem;
+
+// Body
+$body-color: $gray-900 !default;
+
+// Links
+$link-color: $yellow !default;
+$link-decoration: none !default;
+$link-hover-color: $red !default;
+$link-hover-decoration: underline !default;
+
+// Inline code
+$code-bg: $gray-200 !default;
+$code-color: $gray-900 !default;
+
+// Code copy
+$btn-code-copy-color-active: $yellow !default;
+
+// TOC
+$toc-color: $yellow !default;
+$toc-font-size: 1em;
+
+// Navbar
+$navbar-bg: $gray-900 !default;
+$navbar-fg: $white !default;
+$navbar-hl: $yellow !default;
+
+// Footer
+$footer-bg: $gray-900 !default;
+$footer-fg: $white !default;
+
+/*-- scss:rules --*/
+// BODY
+h2 {
+  border-bottom: 1px solid $black;
+}
+// HEAD
+.navbar-logo {
+  max-height: 50px;
+  width: auto;
+  align-items: baseline;
+}
+
+// Home Content
+.content-description {
+  text-align: center;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+.top-viz {
+  padding: 20px;
+}
+
+.top-viz img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-viz-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+.top-viz-text h2 {
+  margin-top: 1.5rem;
+}
+
+.top-viz-img p {
+  margin-bottom: 0;
+}
+
+.content-button {
+  color: $yellow;
+  background-color: #121212;
+  padding: 10px 50px;
+}
+
+.yellow-background {
+  background-color: $yellow;
+}

@@ -1,0 +1,72 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Muladata"
+  image: images/logo-color.png
+  favicon: images/favicon.png
+  twitter-card:
+    site: "@alifdwt"
+  open-graph: true
+  site-url: https://muladata.github.io
+  repo-url: https://github.com/alifdwt/muladata.github.io
+  repo-actions: [edit, issue]
+  google-analytics: "G-9H3H12J21Y"
+  navbar:
+    #background: "#f0eeeb"
+    logo: images/logo-color.png
+    logo-alt: "Muladata brand"
+    title: false
+    collapse-below: lg
+    right:
+      - proyek-data/index.qmd
+      - ide-data/index.qmd
+      - data-peta/index.qmd
+      - opini/index.qmd
+      - text: "Tentang Muladata"
+        menu: 
+          - text: "Siapa Saya?"
+            href: about.qmd
+          - text: "Kontributor"
+            href: alifdwt.github.io
+          - text: "Hubungi Saya"
+            href: mailto:aputradewantara@gmail.com
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer: 
+    background: "#000000"
+    foreground: "#ffffff"
+    left: |
+      Hak Cipta &copy; 2023 [Musim Semi Peking](https://alifdwt.github.io/)
+    center: 
+      - href: https://github.com/alifdwt
+        icon: github
+      - href: https://twitter.com/alifdwt
+        icon: twitter
+        aria-label: Twitter
+      - href: https://fosstodon.org/@alifdwt
+        icon: mastodon
+        aria-label: Mastodon
+      - href: https://www.linkedin.com/alifdwt
+        icon: linkedin
+        aria-label: Linkedin
+      - href: https://alifdwt.github.io
+        icon: rss
+        aria-label: Muladata rss
+    right: |
+      [Syarat dan Ketentuan](https://alifdwt.github.io/)
+format:
+  html:
+    # theme: [lux, muladata.scss]
+    # css: muladata.css
+    theme: muladata.scss
+    toc: true
+    grid: 
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
+
+execute: 
+  freeze: auto
+

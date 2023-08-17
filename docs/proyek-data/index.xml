@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Muladata</title>
+<link>https://muladata.github.io/proyek-data/index.html</link>
+<atom:link href="https://muladata.github.io/proyek-data/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<image>
+<url>https://muladata.github.io/images/logo-color.png</url>
+<title>Muladata</title>
+<link>https://muladata.github.io/proyek-data/index.html</link>
+<height>81</height>
+<width>144</width>
+</image>
+<generator>quarto-1.3.353</generator>
+<lastBuildDate>Fri, 28 Jul 2023 17:00:00 GMT</lastBuildDate>
+<item>
+  <title>PPDB Bogor</title>
+  <dc:creator>Alif Dewantara</dc:creator>
+  <link>https://muladata.github.io/proyek-data/ppdb-bogor/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus, est nec scelerisque maximus, quam dolor dignissim justo, at ullamcorper mauris neque eget diam. Cras ultricies, metus mollis dapibus finibus, libero augue porta libero, ac hendrerit enim felis eget magna. Vivamus eu elit placerat, tincidunt lacus nec, mollis eros. Ut pharetra sollicitudin eros in tempus. Sed tempus ultrices eleifend. In lobortis maximus justo id interdum. In tempus tempor dui vehicula pretium. Duis quis iaculis libero. Maecenas consequat, urna in bibendum sodales, odio est cursus nisi, eget facilisis orci dui ac diam. Aliquam erat volutpat. Sed dolor urna, commodo sit amet suscipit a, dapibus a nunc. Integer imperdiet lectus eget nibh tincidunt auctor sed eget quam. Duis euismod sed lacus non ultrices. Praesent fermentum faucibus facilisis.</p>
+<iframe height="600" width="100%" frameborder="no" src="https://alif-dewantara.shinyapps.io/PPDB-Bogor_ShinyApp/"> </iframe>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus, est nec scelerisque maximus, quam dolor dignissim justo, at ullamcorper mauris neque eget diam. Cras ultricies, metus mollis dapibus finibus, libero augue porta libero, ac hendrerit enim felis eget magna. Vivamus eu elit placerat, tincidunt lacus nec, mollis eros. Ut pharetra sollicitudin eros in tempus. Sed tempus ultrices eleifend. In lobortis maximus justo id interdum. In tempus tempor dui vehicula pretium. Duis quis iaculis libero. Maecenas consequat, urna in bibendum sodales, odio est cursus nisi, eget facilisis orci dui ac diam. Aliquam erat volutpat. Sed dolor urna, commodo sit amet suscipit a, dapibus a nunc. Integer imperdiet lectus eget nibh tincidunt auctor sed eget quam. Duis euismod sed lacus non ultrices. Praesent fermentum faucibus facilisis.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Pendidikan</category>
+  <category>Shiny</category>
+  <guid>https://muladata.github.io/proyek-data/ppdb-bogor/index.html</guid>
+  <pubDate>Fri, 28 Jul 2023 17:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

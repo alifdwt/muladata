@@ -1,0 +1,22 @@
+---
+title: "Haruskah Saya Juga Memilih R, atau Cukup Python Saja"
+description-meta: "Membahas tentang pilihan krusial sebelum memutuskan mempelajari bahasa pemrograman untuk bidang data"
+title-block-banner: true
+author: "Alif Dewantara"
+date: "2023-08-10"
+categories:
+  - Bahasa Pemrograman
+  - Media Sosial
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec pharetra lacus. Ut ac sodales metus, eget vulputate libero. Nulla placerat, nisl sed ullamcorper imperdiet, lorem nunc lobortis urna, sit amet ultrices ex sem non justo. Donec maximus vestibulum nisi et commodo. Mauris elementum, magna quis volutpat sagittis, nibh felis ornare felis, vitae ultrices nibh ante eu tellus. Nullam sit amet ex vitae leo rhoncus suscipit in eget est. Aliquam cursus dictum massa nec malesuada. Curabitur pretium diam quis accumsan condimentum. Curabitur sapien diam, finibus a vestibulum eu, sagittis vitae purus. Morbi accumsan malesuada ipsum vitae commodo. Donec in justo bibendum mi hendrerit sollicitudin.
+
+# Aenean nec diam libero
+
+Aenean nec diam libero. Fusce lacinia gravida metus, vitae auctor magna auctor in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse urna ex, molestie at leo non, malesuada aliquet nisi. Donec volutpat congue egestas. Mauris ac venenatis risus. Vivamus consectetur orci enim, ac consequat sem iaculis in. Duis mollis nunc quis pellentesque maximus. Donec a metus vulputate massa malesuada semper iaculis non diam.
+
+![](/opini/r-atau-python/images/1611758188aA0EmojMRk.png)
+
+# Aenean vestibulum elit molestie
+
+Aenean vestibulum elit molestie metus convallis blandit. Quisque at rutrum libero. Nulla finibus tellus in massa porta dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla viverra ut nisi sed sodales. Ut id eleifend purus. Nullam lorem orci, fermentum quis sollicitudin sit amet, placerat id nibh. Maecenas et metus quis est ullamcorper bibendum et gravida odio. Ut imperdiet, dolor eget fringilla mattis, nisl eros rhoncus quam, sed ornare elit turpis quis magna. Praesent imperdiet, enim at sagittis feugiat, lectus nunc ullamcorper tellus, at euismod nulla mi non leo. In iaculis, diam in dictum imperdiet, magna arcu elementum leo, a bibendum urna eros id massa. Nam et luctus leo, sit amet auctor diam. Proin eu velit ipsum. Etiam aliquet, orci eu congue dapibus, leo neque rhoncus risus, sed sagittis nisi massa in purus. Mauris mattis blandit lectus. Nulla aliquam egestas ultricies.
